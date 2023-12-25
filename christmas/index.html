@@ -4358,7 +4358,7 @@
             ctx = canvas.getContext("2d"),
             w = (canvas.width = window.innerWidth),
             h = (canvas.height = window.innerHeight),
-            hue = 675, //色调色彩
+            hue = 325, //色调色彩
             stars = [], //保存所有星星
             count = 0, //用于计算星星
             maxStars = 1500; //星星数量
@@ -4378,8 +4378,8 @@
         //h->hue,代表色调色彩，0为red，120为green，240为blue
         //s->saturation，代表饱和度，0%-100%
         //l->lightness，代表亮度，0%为black，100%位white
-        gradient2.addColorStop(0.1, "hsl(" + hue + ", 61%, 10%)");
-        gradient2.addColorStop(0.25, "hsl(" + hue + ", 64%, 2%)");
+        gradient2.addColorStop(0.1, "hsl(" + hue + ", 16%, 60%)");
+        gradient2.addColorStop(0.25, "hsl(" + hue + ", 15%, 60%)");
         gradient2.addColorStop(1, "transparent");
 
         ctx2.fillStyle = gradient2;
